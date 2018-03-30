@@ -25,7 +25,7 @@ SECRET_KEY = 'fbx-yilg$eg%a4q5aiwkv1$b$$iu9(eex%=)&p#^*(2z5#1g%-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -86,10 +86,8 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-#LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'ko-kr'
 
-#TIME_ZONE = 'UTC'
 TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
