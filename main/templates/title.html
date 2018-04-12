@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<html>
+
+<head>
+    <title>Wooyong's pystagram</title>
+    <style>
+        div{
+            background-color : skyblue;
+            background-image: url('background.jpg');
+        }
+    </style>
+</head>
+
+
+<body>
+{% load staticfiles %}
+<img src = "{% static "main\img\kground.jpg"%}">
+
+<div id="content">
+
+    <h1>Pystagram</h1>
+
+    <ul>
+
+    <li><h3><a href="http://blog.naver.com/isac31"</a>Go to Wooyong's blog</h3></li>
+    <li><h3><a href="http://0.0.0.0:8000/accounts/login"</a>Log-in</h3></li>
+
+    </ul>
+
+</div>
+</body>
+</html>

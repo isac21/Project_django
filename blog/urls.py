@@ -1,10 +1,11 @@
 # blog/urls.py
 
 from django.conf.urls import url, patterns
-from blog import views
+from .views import index, title
 
 
 urlpatterns = [
 
-    url(r'^$', views.index, name='detail'),
+#    url(r'^$', index, name='index'),
+    url(r'^$', title, name='title'),
 ]
