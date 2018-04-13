@@ -1,7 +1,10 @@
 from django.shortcuts import render
+from django.views.generic.base import TemplateView
 
+class HomeView(TemplateView):
+    template_name = 'home.html'
 # Create your views here.
 
 
-def index(request):
-    return render(request, 'title.html')
+#def index(request):
+#    return render(request, 'title.html')
