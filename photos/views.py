@@ -7,9 +7,11 @@ from .forms import PhotoForm
 
 # Create your views here.
 
-def hello(request):
-    return HttpResponse('안녕하세요!')
+#def hello(request):
+#    return HttpResponse('안녕하세요!')
 
+def hello(request):
+    return render(request, 'photosHome.html')
 
 def detail(request, pk):
     photo = get_object_or_404(Photo, pk=pk)

@@ -9,7 +9,7 @@ from .views import hello, detail, create
 
 
 urlpatterns = [
-    url(r'^$', hello),
+    url(r'^$', hello, name='index'),
     url(r'^(?P<pk>[0-9]+)/$', detail, name='detail'),
     url(r'^upload/$', create, name='create'),
 

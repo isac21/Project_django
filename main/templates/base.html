@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='ko'>
 
 <head>
 <title>{% block title %}Pytagram{% endblock %}</title>
 
 {% load staticfiles %}
-<link rel="stylesheet" type="text/css" href="{% static "main\css\base.css"%}" />
+<link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}" />
 <link rel="stylesheet" type="text/css" href="{% block extrastyle %}{% endblock %}" />
 
 </head>
@@ -13,19 +13,19 @@
 <body>
 
   <div id="header">
-    <h2 class="maintitle">Pytagram</h2>
-    <h4 class="welcome">Welcome, <a href="#">wychoi</a> /
-      <a href="#">Change Pwd</a> /
+    <h1 class="maintitle">Pytagram</h1>
+    <h4 class="welcome">Welcome, <a href="#"> wychoi</a> /
+      <a href="#">Change Passwd</a> /
       <a href="#">Log out</a> /
     </h4>
 
   </div>
 
 
-  <div id="header">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Blog</a></li>
-    <li><a href="#">Photo</a></li>
+  <div id="menu">
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'blog:title' %}">Blog</a></li>
+    <li><a href="{% url 'photos:index' %}">Photo</a></li>
 
     <li><a href="#">Add&bigtriangledown;</a>
       <ul>
